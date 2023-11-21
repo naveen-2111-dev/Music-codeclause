@@ -12,7 +12,7 @@
         <div class="music">
             <img src="65473275.webp" width="150rem" height="150rem">
             <div class="player">
-                <audio controls>
+                <audio id="play" controls>
                     <source src="audio.mp3">
                 </audio>
             </div>
@@ -20,13 +20,19 @@
                 <input type="range" value="0">
             </div>
             <div class="controlers">
-                <i class="fa fa-angle-left"></i>
-                <i class="fa fa-caret-right" id="right"></i>
-                <i class="fa fa-angle-right"></i>
+                <div class="ctrlers">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="ctrlers" onclick="PlayControler()" id="playpause">
+                    <i class="fa fa-caret-right" id="right"></i>
+                </div>
+                <div class="ctrlers">
+                    <i class="fa fa-angle-right"></i>
+                </div>
             </div>
         </div>
 
     </div>
-    
+    <script src="music.js"></script>
 </body>
 </html>
