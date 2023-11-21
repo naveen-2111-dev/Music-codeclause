@@ -25,3 +25,14 @@
     border-radius: 50%;
     border: 10px solid darkgray;
 }
+
+input{
+    -webkit-appearance: none;
+    color: #ccc;
+    background-color: #ccc;
+}
+
+.controlers{
+    font-size: 3rem;
+    background-color: #ccc;
+}

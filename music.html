@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music-player</title>
     <link rel="stylesheet" href="style.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
@@ -15,7 +16,14 @@
                     <source src="audio.mp3">
                 </audio>
             </div>
-            <div
+            <div>
+                <input type="range" value="0">
+            </div>
+            <div class="controlers">
+                <i class="fa fa-angle-left"></i>
+                <i class="fa fa-caret-right" id="right"></i>
+                <i class="fa fa-angle-right"></i>
+            </div>
         </div>
 
     </div>
