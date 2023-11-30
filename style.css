@@ -3,32 +3,53 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color:white;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
+    background-color: black;
+    width: 400px;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 1rem;
 }
 
 .music {
     text-align: center;
+    margin: 0 auto;
+    display: block;
 }
 
 .player {
     margin: 20px;
 }
 
+.music span{
+    color: rgb(9, 133, 241);
+    text-transform: uppercase;
+}
+
+.music p{
+    font-size: 11px;
+}
+
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 50%;
+    margin-top: 150px;
+    border: 2px solid rgb(9, 133, 241);
 }
 
 input[type="range"] {
-    width: 100%;
     margin: 10px 0;
+    width: 15rem;
+}
+
+.inp{
+    margin-top: 90px;
 }
 
 .controlers {
@@ -39,15 +60,57 @@ input[type="range"] {
 .ctrlers {
     margin: 0 10px;
     cursor: pointer;
+    margin: 20px;
+    background-color:rgb(9, 133, 241);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 12px blue;
 }
 
-.fa {
-    font-size: 24px;
+.controlers{
+    font-size: 1.5rem;
 }
 
-/* Media Query for responsiveness */
-@media only screen and (max-width: 600px) {
+@media(max-width: 600px) {
+    body{
+        background-color: black;
+    }
+
     .container {
         flex-direction: column;
+        height: 100vh;
+        width: 300px;
+        background-color: #ccc;
+        box-shadow: 5px 5px 12px grey;
+    }
+    img{
+        width:150px;
+        height: 150px;
+        margin-top: 80px;
+        border: 5px solid black;
+    }
+    .inp{
+        margin-top: 0rem;
+    }
+    .music h1{
+        color: black;
+        font-size: 1.7rem;
+    }
+    .music span{
+        color: grey;
+    }
+    .music p{
+        color: black;
+        font-size: 8px;
+    }
+    input[type="range"] {
+        width: 12rem;
+    }
+    .ctrlers{
+        background-color: grey;
+        box-shadow:inset 5px 5px 12px darkgray;
+        margin: 15px;
+        padding: 13px;
+        color: black;
     }
 }
